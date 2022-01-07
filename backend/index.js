@@ -48,10 +48,10 @@ app.use("/api/categories", categoryRouter);
 app.use("/images", express.static(path.resolve(__dirname, "/images")));
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("/frontend/build"));
+  app.use(express.static("frontend/build"));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "/frontend/build/index.html"));
+    res.sendFile(path.join(__dirname, "frontend/build/index.html"));
   });
 }
 
