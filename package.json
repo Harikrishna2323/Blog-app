@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.4.0",
+    "npm": "8.3.0"
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
